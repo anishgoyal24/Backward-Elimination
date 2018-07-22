@@ -5,6 +5,8 @@ Columns are first dropped using the adjusted R-Squared values and then to furthe
 
 Pass the features(X) followed by the labels(y) and the significance level you want to consider into the backward_eliminaton function. It will return the optimised dataset.
 
+NOTE: No need to pass the dataset with the variable column already added. It will automatically add the column.
+
 Import the following libraries for the code to work properly.
 
 import pandas as pd
