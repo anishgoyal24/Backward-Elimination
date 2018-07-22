@@ -39,7 +39,6 @@ def p_elimination(x, y, sl):
     for i in range(0, noCols):
         ols_regeressor = sm.OLS(exog=x, endog=y).fit()
         pValues = ols_regeressor.pvalues
-        print(pValues)
         if max(pValues) > sl:
             x = x.drop(np.argmax(pValues), axis=1)
         else:
